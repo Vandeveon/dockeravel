@@ -2,7 +2,7 @@
 
 Clone of https://github.com/developersalliance/magento2-dockergento console tool for Magento implemented for Laravel
 
-Full functionality of original repo is not implemented, TO DO Rest ;) 
+Full functionality of original repo is not implemented, and will be added as time goes on, currently supported OS is Linux, TODO Rest ;)
 
 ## Setup
 
@@ -11,25 +11,25 @@ Requirements:
 - Docker
 - Docker Compose
 
-#### Install docker-compose-laravel console
+#### Install dockeravel console
 
 1. Clone this repo
 
     ```
-    git clone https://github.com/Vandeveon/docker-compose-laravel
+    git clone https://github.com/Vandeveon/dockeravel.git
     ```
 
-2. Add `dcl` bin into your `$PATH`
+2. Add `dockeravel` bin into your `$PATH`
 
     ```
-    sudo ln -s $(pwd)/docker-compose-laravel/bin/dcl /usr/local/bin/
+    sudo ln -s $(pwd)/dockeravel/bin/dockeravel /usr/local/bin/
     ```
 
-3. Open a new terminal tab/window and check that docker-compose-laravel works
+3. Open a new terminal tab/window and check that dockeravel works
     
     ```
-    which dcl
-    dcl
+    which dockeravel
+    dockeravel
     ```
 
 
@@ -37,7 +37,7 @@ Requirements:
 
 ```
 cd <your_project>
-dcl setup
+dockeravel setup
 ```
 
 ## Usage
@@ -45,14 +45,14 @@ dcl setup
 #### Start Application
 
 ```
-dcl start
-dcl composer install
+dockeravel start
+dockeravel composer install
 sudo vim /etc/hosts
 // Add -> 127.0.0.1 <your-domain>
 ```
 #### Enable/disable Xdebug
 
 ```
-dcl debug-on
-dcl debug-off
+dockeravel debug-on
+dockeravel debug-off
 ```

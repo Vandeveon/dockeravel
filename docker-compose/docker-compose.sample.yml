@@ -20,7 +20,7 @@ services:
     working_dir: /var/www/html
     volumes:
       - ./:/var/www/html
-      - ./dcl_conf/docker-compose-laravel/nginx/conf/default.conf:/etc/nginx/conf.d/default.conf
+      - ./dockeravel_conf/dockeravel/nginx/conf/default.conf:/etc/nginx/conf.d/default.conf
     ports:
       - 80:8000
 

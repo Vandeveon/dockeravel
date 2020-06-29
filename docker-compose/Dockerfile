@@ -16,7 +16,7 @@ RUN pecl channel-update pecl.php.net \
   && sed -i -e 's/^zend_extension/\;zend_extension/g' /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
-COPY dcl_conf/docker-compose-laravel/xdebug.ini /usr/local/etc/php/conf.d/
+COPY dockeravel_conf/dockeravel/xdebug.ini /usr/local/etc/php/conf.d/
 
 RUN groupadd -g 1000 app \
  && useradd -g 1000 -u 1000 -d /var/www -s /bin/bash app

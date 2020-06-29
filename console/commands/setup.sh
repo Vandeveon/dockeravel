@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DCL_CONFIG_DIR="dcl_conf/docker-compose-laravel"
+dockeravel_CONFIG_DIR="dockeravel_conf/dockeravel"
 
 copy_with_consent()
 {
@@ -25,15 +25,15 @@ create_target_path()
     cp -Rf ${SOURCE_PATH} ${TARGET_PATH}
 }
 
-printf "${GREEN}Setting up dcl config files${COLOR_RESET}\n"
-copy_with_consent "${DCL_DIR}/${DCL_CONFIG_DIR}/" "${DCL_CONFIG_DIR}"
-copy_with_consent "${DCL_DIR}/docker-compose/docker-compose.sample.yml" "${DOCKER_COMPOSE_FILE}"
-copy_with_consent "${DCL_DIR}/docker-compose/${DOCKERFILE}" "${DOCKERFILE}"
+printf "${GREEN}Setting up dockeravel config files${COLOR_RESET}\n"
+copy_with_consent "${dockeravel_DIR}/${dockeravel_CONFIG_DIR}/" "${dockeravel_CONFIG_DIR}"
+copy_with_consent "${dockeravel_DIR}/docker-compose/docker-compose.sample.yml" "${DOCKER_COMPOSE_FILE}"
+copy_with_consent "${dockeravel_DIR}/docker-compose/${DOCKERFILE}" "${DOCKERFILE}"
 
 
 # Stop running containers in case that setup was executed in an already running project
 ${COMMANDS_DIR}/stop.sh
 
 echo ""
-printf "${GREEN}Docker-compose-laravel set up successfully!${COLOR_RESET}\n"
+printf "${GREEN}dockeravel set up successfully!${COLOR_RESET}\n"
 echo ""

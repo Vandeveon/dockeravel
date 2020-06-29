@@ -10,7 +10,7 @@ usage()
     printf "  ${GREEN}--root${COLOR_RESET}     Run command as root user\n"
     echo ""
     echo "Example:"
-    printf "  ${GREEN}dcl exec ls -lah${COLOR_RESET}\n"
+    printf "  ${GREEN}dockeravel exec ls -lah${COLOR_RESET}\n"
 }
 
 if [ "$#" == 0 ] || [ "$1" == "--help" ]; then
