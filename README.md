@@ -1,3 +1,9 @@
+# Info
+
+Clone of https://github.com/developersalliance/magento2-dockergento console tool for Magento implemented for Laravel
+
+Full functionality of original repo is not implemented, TO DO Rest ;) 
+
 ## Setup
 
 Requirements:
@@ -5,12 +11,12 @@ Requirements:
 - Docker
 - Docker Compose
 
-### Install dockergento console
+### Install docker-compose-laravel console
 
 1. Clone This repo
 
     ```
-    git clone https://github.com/ModestCoders/magento2-dockergento.git
+    git clone https://github.com/Vandeveon/docker-compose-laravel
     ```
 
 2. Add `dcl` bin into your `$PATH`
