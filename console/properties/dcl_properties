@@ -1,0 +1,8 @@
+DOCKER_COMPOSE_FILE="docker-compose.yml"
+COMPOSER_DIR="."
+DOCKERFILE="Dockerfile"
+BIN_DIR="./vendor/bin"
+SERVICE_APP="web"
+SERVICE_PHP="php"
+SERVICE_DB="db"
+SERVICE_NODE="node"
