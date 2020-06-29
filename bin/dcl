@@ -50,6 +50,8 @@ usage()
 
 init_dirs
 source ${TASKS_DIR}/load_properties.sh
+source ${PROPERTIES_DIR}/command_descriptions
+
 
 if [ "$#" == 0 ] || [ "$1" == "--help" ]; then
   usage

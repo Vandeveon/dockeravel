@@ -1,8 +1,16 @@
 DOCKER_COMPOSE_FILE="docker-compose.yml"
 COMPOSER_DIR="."
+
 DOCKERFILE="Dockerfile"
 BIN_DIR="./vendor/bin"
 SERVICE_APP="web"
 SERVICE_PHP="php"
+SERVICE_PHP_XDEBUG="php_xdebug"
 SERVICE_DB="db"
 SERVICE_NODE="node"
+SERVICE_REDIS="redis"
+
+USER_PHP="app"
+GROUP_PHP="app"
+WORKDIR_PHP="/var/www/html"
+SERVICES_WITH_LINUX_PERMISSIONS_ISSUES="${SERVICE_APP} ${SERVICE_PHP}"

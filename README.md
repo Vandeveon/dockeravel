@@ -11,9 +11,9 @@ Requirements:
 - Docker
 - Docker Compose
 
-### Install docker-compose-laravel console
+#### Install docker-compose-laravel console
 
-1. Clone This repo
+1. Clone this repo
 
     ```
     git clone https://github.com/Vandeveon/docker-compose-laravel
@@ -42,10 +42,17 @@ dcl setup
 
 ## Usage
 
-### Start Application
+#### Start Application
 
 ```
 dcl start
 dcl composer install
 sudo vim /etc/hosts
 // Add -> 127.0.0.1 <your-domain>
+```
+#### Enable/disable Xdebug
+
+```
+dcl debug-on
+dcl debug-off
+```

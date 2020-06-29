@@ -35,5 +35,5 @@ copy_with_consent "${DCL_DIR}/docker-compose/${DOCKERFILE}" "${DOCKERFILE}"
 ${COMMANDS_DIR}/stop.sh
 
 echo ""
-printf "${GREEN}Dockergento set up successfully!${COLOR_RESET}\n"
+printf "${GREEN}Docker-compose-laravel set up successfully!${COLOR_RESET}\n"
 echo ""
