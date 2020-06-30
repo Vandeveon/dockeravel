@@ -28,8 +28,6 @@ create_target_path()
 printf "${GREEN}Setting up dockeravel config files${COLOR_RESET}\n"
 copy_with_consent "${dockeravel_DIR}/${dockeravel_CONFIG_DIR}/" "${dockeravel_CONFIG_DIR}"
 copy_with_consent "${dockeravel_DIR}/docker-compose/docker-compose.sample.yml" "${DOCKER_COMPOSE_FILE}"
-copy_with_consent "${dockeravel_DIR}/docker-compose/${DOCKERFILE}" "${DOCKERFILE}"
-
 
 # Stop running containers in case that setup was executed in an already running project
 ${COMMANDS_DIR}/stop.sh

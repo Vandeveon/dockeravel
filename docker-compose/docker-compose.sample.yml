@@ -2,16 +2,12 @@ version: '3'
 
 services:
   php:
-    build:
-      context: .
+    image: vandeveon/dockeravel:php-7.3
     volumes:
       - ./:/var/www/html
 
   php_xdebug:
-    depends_on:
-      - php
-    build:
-      context: .
+    image: vandeveon/dockeravel:php-7.3
     volumes:
       - ./:/var/www/html
 
@@ -49,6 +45,17 @@ services:
     image: redis:5
     volumes:
       - redisdata:/data
+
+  adminer:
+    image: adminer
+    ports:
+      - 8090:8080
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 1025:1025
+      - 8025:8025
 
 volumes:
   mysqldata:
