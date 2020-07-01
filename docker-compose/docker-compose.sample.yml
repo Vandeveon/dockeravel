@@ -8,6 +8,8 @@ services:
 
   php_xdebug:
     image: vandeveon/dockeravel:php-7.3
+    depends_on:
+      - php
     volumes:
       - ./:/var/www/html
 
