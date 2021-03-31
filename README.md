@@ -16,7 +16,7 @@ Requirements:
 1. Clone this repo
 
     ```
-    git clone https://github.com/Vandeveon/dockeravel.git
+    git clone https://github.com/jambardnishvili/dockeravel.git
     ```
 
 2. Add `dockeravel` bin into your `$PATH`
